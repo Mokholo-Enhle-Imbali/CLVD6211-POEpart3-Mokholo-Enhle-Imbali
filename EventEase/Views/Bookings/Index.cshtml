@@ -1,0 +1,71 @@
+﻿@model IEnumerable<EventEase.Models.Bookings>
+
+@{
+    ViewData["Title"] = "Current Bookings";
+}
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #8ee307, #00cffd);
+        height: 100vh;
+        margin: 0;
+    }
+</style>
+
+<h1>Index</h1>
+
+<form asp-action="Index" method="get">
+    <div class="form-group">
+        <input type="text" name="searchString" class="form-control" placeholder="Search..." />
+    </div>
+    <button type="submit" class="btn btn-primary mt-2">Search</button>
+</form>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Booking ID</th>
+            <th>Venue</th>
+            <th>Events</th>
+            <th>Booking Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+                <td>@item.bookingsID</td>
+                <td>@item.Venue?.venueName</td>
+                <td>@item.Events?.eventName</td>
+                <td>@item.bookingDate.ToString("yyyy-MM-dd")</td>
+
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.bookingsID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.bookingsID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.bookingsID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<p>
+    <a asp-action="CreateBookings" style="background-color: rgb(65, 132, 225); color: rgb(0, 229, 255);">Create New</a>
+    <br />
+    <a href="/Home/Index" class="btn" style="background-color: rgb(65, 132, 225); color: rgb(0, 229, 255);"> Back To Home</a>
+</p>

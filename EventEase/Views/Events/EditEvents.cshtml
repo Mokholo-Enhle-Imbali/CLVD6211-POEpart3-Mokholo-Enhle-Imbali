@@ -1,0 +1,68 @@
+﻿@model EventEase.Models.Events
+
+@{
+    ViewData["Title"] = "Edit Events";
+}
+
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #8ee307, #00cffd);
+        height: 100vh;
+        margin: 0;
+    }
+</style>
+
+<h1>Edit Events</h1>
+
+<h4>Events</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditEvents">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="eventsID" />
+            <div class="form-group">
+                <label asp-for="eventName" class="control-label"></label>
+                <input asp-for="eventName" class="form-control" />
+                <span asp-validation-for="eventName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="eventDate" class="control-label"></label>
+                <input asp-for="eventDate" class="form-control" />
+                <span asp-validation-for="eventDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="description" class="control-label"></label>
+                <input asp-for="description" class="form-control" />
+                <span asp-validation-for="description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="venueID" class="control-label"></label>
+                <input asp-for="venueID" class="form-control" />
+                <span asp-validation-for="venueID" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label>Event Type</label>
+                <select asp-for="eventsTypeID" asp-items="@(new SelectList((IEnumerable<EventsType>)ViewData["EventsType"], "eventsTypeID", "eventsTypeName"))" class="form-control">
+                    <option value="">--Select Type--</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+
+        </form>
+        
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" style="background-color: rgb(65, 132, 225); color: rgb(0, 229, 255);">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\models\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:models\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\views\\bookings\\createbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:views\\bookings\\createbookings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:controllers\\venuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\views\\events\\createevents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:views\\events\\createevents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:controllers\\eventscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|c:\\users\\enhle\\onedrive\\desktop\\github\\clvd6211-poepart3-mokholo-enhle-imbali\\eventease\\views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{98C75048-FA8A-4918-AB7C-177AE521B6A7}|EventEase.csproj|solutionrelative:views\\bookings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 215,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EventsController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Controllers\\EventsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EventsController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Controllers\\EventsController.cs",
+              "RelativeToolTip": "Controllers\\EventsController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T19:26:09.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateEvents.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Views\\Events\\CreateEvents.cshtml",
+              "RelativeDocumentMoniker": "Views\\Events\\CreateEvents.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Views\\Events\\CreateEvents.cshtml",
+              "RelativeToolTip": "Views\\Events\\CreateEvents.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T11:30:06.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VenueController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Controllers\\VenueController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VenueController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Controllers\\VenueController.cs",
+              "RelativeToolTip": "Controllers\\VenueController.cs",
+              "ViewState": "AgIAALgAAAAAAAAAAADgv8kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T13:57:04.795Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateBookings.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Views\\Bookings\\CreateBookings.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\CreateBookings.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Views\\Bookings\\CreateBookings.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\CreateBookings.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAADMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-10T08:25:42.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Events.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Models\\Events.cs",
+              "RelativeDocumentMoniker": "Models\\Events.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Models\\Events.cs",
+              "RelativeToolTip": "Models\\Events.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:11:07.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAiwDcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T17:25:43.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Views\\Bookings\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Bookings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\Views\\Bookings\\Index.cshtml",
+              "RelativeToolTip": "Views\\Bookings\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-06T17:00:39.431Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

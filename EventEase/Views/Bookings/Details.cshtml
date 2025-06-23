@@ -1,0 +1,44 @@
+﻿@model EventEase.Models.Bookings
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    body {
+        background: linear-gradient(to bottom, #8ee307, #00cffd);
+        height: 100vh;
+        margin: 0;
+    }
+</style>
+
+<h1>Details</h1>
+
+<div>
+    <h4>Bookings</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.eventsID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.eventsID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.venueID)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.venueID)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.bookingDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.bookingDate)
+        </dd>
+    </dl>
+</div>
+<div>
+   
+    <a asp-action="Index" style="background-color: rgb(65, 132, 225); color: rgb(0, 229, 255);">Back to List</a>
+</div>

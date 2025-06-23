@@ -13,31 +13,35 @@ namespace EventEase.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(string searchtype, int? venueId, DateTime? startDate,DateTime? endDate) //asynchronous task method
+        public async Task<IActionResult> Index(string searchString) //asynchronous task method
         {
-            //filters
-            var events = _context.Events.Include(e => e.Venue).Include(e => e.EventsType).AsQueryable();
+            ////filters
+            //var events = _context.Events.Include(e => e.Venue).Include(e => e.EventsType).AsQueryable();
 
-            if (!string.IsNullOrEmpty(searchtype))
-            {
-                events = events.Where(e => e.EventsType.eventsTypeName == searchtype);
-            }
+            //if (!string.IsNullOrEmpty(searchtype))
+            //{
+            //    events = events.Where(e => e.EventsType.eventsTypeName == searchtype);
+            //}
 
-            if (venueId.HasValue)
-            {
-                events = events.Where(e=> e.venueID==venueId);
-            }
+            //if (venueId.HasValue)
+            //{
+            //    events = events.Where(e=> e.venueID==venueId);
+            //}
 
-            if (startDate.HasValue && endDate.HasValue)
-            {
-                events = events.Where(e=>e.eventDate>=startDate && e.eventDate<=endDate);
-            }
+            //if (startDate.HasValue && endDate.HasValue)
+            //{
+            //    events = events.Where(e=>e.eventDate>=startDate && e.eventDate<=endDate);
+            //}
 
-            //data for dropdown menu
-            ViewData["EventsType"] = _context.EventsType.ToList();
-            ViewData["Venue"]= _context.Venue.ToList();
+            ////data for dropdown menu
+            //ViewData["EventsType"] = _context.EventsType.ToList();
+            //ViewData["Venue"]= _context.Venue.ToList();
 
-            return View(await events.ToListAsync());
+            //return View(await events.ToListAsync());
+
+            var events = await _context.Events.ToListAsync();
+            return View(events);
+
         }
 
 

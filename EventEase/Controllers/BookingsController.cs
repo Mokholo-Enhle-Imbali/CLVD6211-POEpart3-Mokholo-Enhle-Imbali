@@ -14,9 +14,32 @@ namespace EventEase.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(string searchString) //asynchronous task method
+        public async Task<IActionResult> Index(string searchString, string searchtype, int? venueId, DateTime? startDate, DateTime? endDate) //asynchronous task method
         {
-            var bookings = _context.Bookings.Include(b=>b.Events).Include(b=>b.Venue).AsQueryable();
+            
+            //filters
+            var bookings = _context.Bookings.Include(b => b.Events).Include(b => b.Venue).AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchtype))
+            {
+                bookings = bookings.Where(b => b.EventsType.eventsTypeName == searchtype);
+            }
+
+            if (venueId.HasValue)
+            {
+                bookings = bookings.Where(b=> b.venueID==venueId);
+            }
+
+            if (startDate.HasValue && endDate.HasValue)
+            {
+                bookings = bookings.Where(b=>b.bookingDate>=startDate && b.bookingDate<=endDate);
+            }
+
+            //data for dropdown menu
+            ViewData["EventsType"] = _context.EventsType.ToList();
+            ViewData["Venue"] = _context.Venue.ToList();
+
+           
 
             if (!string.IsNullOrEmpty(searchString))
             {
@@ -31,6 +54,7 @@ namespace EventEase.Controllers
         {
             ViewBag.Events = _context.Events.ToList();
             ViewBag.Venue = _context.Venue.ToList();
+            ViewData["EventsType"] = _context.EventsType.ToList();
             return View();
         }
 
@@ -47,6 +71,8 @@ namespace EventEase.Controllers
                 ModelState.AddModelError("", "Error: selected event not found");
                 ViewBag.Events = _context.Events.ToList();
                 ViewBag.Venue = _context.Venue.ToList();
+                ViewBag.EventsType= _context.EventsType.ToList();
+
                 return View(booking);
             }
 

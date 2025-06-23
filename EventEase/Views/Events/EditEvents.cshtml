@@ -1,7 +1,7 @@
 ﻿@model EventEase.Models.Events
 
 @{
-    ViewData["Title"] = "Edit Events";
+    ViewData["Title"] = "EditEvents";
 }
 
 
@@ -42,20 +42,10 @@
                 <input asp-for="venueID" class="form-control" />
                 <span asp-validation-for="venueID" class="text-danger"></span>
             </div>
-
-            <div class="form-group">
-                <label>Event Type</label>
-                <select asp-for="eventsTypeID" asp-items="@(new SelectList((IEnumerable<EventsType>)ViewData["EventsType"], "eventsTypeID", "eventsTypeName"))" class="form-control">
-                    <option value="">--Select Type--</option>
-                </select>
-            </div>
-            
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
-
         </form>
-        
     </div>
 </div>
 
@@ -64,5 +54,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

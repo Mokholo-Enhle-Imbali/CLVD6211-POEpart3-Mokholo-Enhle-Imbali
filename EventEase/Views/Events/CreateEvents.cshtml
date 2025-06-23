@@ -7,9 +7,9 @@
 
 <style>
     body {
-    background: linear-gradient(to bottom, #8ee307, #00cffd);
-    height: 100vh;
-    margin: 0;
+        background: linear-gradient(to bottom, #8ee307, #00cffd);
+        height: 100vh;
+        margin: 0;
     }
 </style>
 
@@ -53,22 +53,14 @@
             <div class="form-group">
                 <label asp-for="venueID" class="control-label"></label>
                 <select asp-for="venueID" class="form-control">
-                <option value="">--select a venue--</option>
-                @foreach(var venue in ViewBag.Venue)
-                {
+                    <option value="">--select a venue--</option>
+                    @foreach (var venue in ViewBag.Venue)
+                    {
                         <option value="@venue.venueId">@venue.venueName</option>
-                }
+                    }
                 </select>
                 <span asp-validation-for="venueID" class="text-danger"></span>
             </div>
-
-            <div class="form-group">
-                <label>Event Type</label>
-                <select asp-for="eventsTypeID" asp-items="@(new SelectList((IEnumerable<EventsType>)ViewData["EventsType"], "eventsTypeID", "eventsTypeName"))" class="form-control">
-                    <option value="">--Select Type--</option>
-                </select>
-            </div>
-
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
@@ -81,5 +73,7 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

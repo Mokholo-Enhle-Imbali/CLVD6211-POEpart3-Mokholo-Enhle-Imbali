@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="st10443720" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\poe-part-2-Mokholo-Enhle-Imbali\\EventEase\\obj\\Release\\net9\.0\\PubTmp\\Out\\$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\enhle\\OneDrive\\Desktop\\GitHub\\CLVD6211-POEpart3-Mokholo-Enhle-Imbali\\EventEase\\obj\\Release\\net9\.0\\PubTmp\\Out\\$" />
   </parameter>
 </parameters>

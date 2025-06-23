@@ -64,8 +64,17 @@ eventsTypeName varchar(250) NOT NULL
 Alter Table Events     -- adding new column for events type foreign key
 Add eventsTypeID int NOT NULL;
 
-Alter table Events -- making eventsTypeID a foreaign key of Events
+Alter table Events  -- making eventsTypeID a foreaign key of Events
 add constraint FK_eventsTypeID foreign key (eventsTypeID) references EventsType(eventsTypeID);
+
+
+Alter Table Bookings     -- adding new column for bookings type foreign key
+Add eventsTypeID INT ;
+
+ALTER TABLE Bookings
+   ADD CONSTRAINT eventsTypeID 
+   FOREIGN KEY (eventsTypeID)
+   REFERENCES EventsType(eventsTypeID);
 
 
 insert into EventsType  -- adding types of events

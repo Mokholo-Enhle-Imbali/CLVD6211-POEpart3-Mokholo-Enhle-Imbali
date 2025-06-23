@@ -58,11 +58,22 @@
                 </select>
                 <span asp-validation-for="venueID" class="text-danger"></span>
             </div>
+
+            <div class="form-group">
+                <label>Event Type</label>
+                <select asp-for="eventsTypeID" asp-items="@(new SelectList((IEnumerable<EventsType>)ViewData["EventsType"], "eventsTypeID", "eventsTypeName"))" class="form-control">
+                    <option value="">--Select Type--</option>
+                </select>
+            </div> 
+
             <div class="form-group">
                 <label asp-for="bookingDate" class="control-label"></label>
                 <input asp-for="bookingDate" class="form-control" />
                 <span asp-validation-for="bookingDate" class="text-danger"></span>
             </div>
+
+           
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
